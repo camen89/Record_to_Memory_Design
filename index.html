@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record & Print</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="m02s_print.js"></script>
+</head>
+
+<body>
+
+    <!-- スタート画面 -->
+    <div id="startScreen" class="screen">
+        <h1>Record to Memory Box</h1>
+        <button onclick="onTakePhotoButtonClick()">Take Photo</button>
+    </div>
+
+    <!-- カメラ撮影画面 -->
+    <div id="cameraScreen" class="screen" style="display:none;">
+        <video id="camera" autoplay muted playsinline></video>
+        <button onclick="takePhoto()">take photo</button>
+    </div>
+
+    <!-- 撮影後結果画面 -->
+    <!-- 撮影後結果画面 -->
+    <div id="resultScreen" class="screen" style="display:none;">
+        <canvas id="resultCanvas"></canvas>
+        <p id="date">Date :</p>
+        <p id="place">Place : Tama Art University</p>
+        <div>
+            <button onclick="printCanvasImage()">Print</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
