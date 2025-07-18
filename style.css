@@ -22,6 +22,7 @@ body {
     /* 右寄せに変更 */
     justify-content: center;
     min-height: 80vh;
+    padding-top: 20vh;
     padding-right: 10vw;
     /* 画面右に余白指定で寄せる */
 }
